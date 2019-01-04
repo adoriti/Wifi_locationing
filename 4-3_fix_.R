@@ -139,7 +139,7 @@ testing_buil_norm <- data_norm[-intrain_buil_norm,]
 
 # create the right training group
 train_buil_norm <- data.frame(training_buil_norm$BUILDINGID,
-                              training_buil_norm[, 1:(nrow(training_buil_norm) -
+                              training_buil_norm[, 1:(ncol(training_buil_norm) -
                                                         9)])
 
 
